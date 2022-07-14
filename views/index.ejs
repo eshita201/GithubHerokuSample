@@ -6,5 +6,21 @@
    
         <h3> Helloo My Name is Eshita. Navigate to next page</h3>
         <a href="/Second">Second</a>
+
+                
+        <% for(var i = 0; i < Products.length; i++) { %>
+            <table>
+                <tr>
+                    <td><%= i + 1 %></td>
+                    <td><%= Products[i].Name %></td>
+                    <td><%= Products[i].Price %></td>
+                    <td><%= Products[i].Category %></td>
+                </tr>
+            </table>
+        <% } %>
+
+
+
+
     </body>
 </html>    
