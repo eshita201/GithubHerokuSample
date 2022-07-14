@@ -2,7 +2,7 @@ const Products= require("../model/product_model")
 const axios=require('axios')
 exports.homeroutes = 
     (req,res)=>{
-        axios.get('todolistsforeshita.herokuapp.com/api/products').then(function(productData){
+        axios.get('http://todolistsforeshita.herokuapp.com/api/products').then(function(productData){
             res.render("index", { Products : productData.data})
         })
         .catch(err =>{
